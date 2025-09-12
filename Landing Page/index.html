@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOHAMMED KHAJA - Web Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-gray-900">
+                          <span class="text-blue-400">MOHAMMED KHAJA </span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="#about" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="#projects" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Projects</a>
+                        <a href="#skills" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Skills</a>
+                        <a href="#contact" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <a href="./Resume.pdf" download=""> </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg pt-20 pb-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center py-20">
+                <h1 class="fade-in stagger-1 text-5xl md:text-6xl font-bold text-white mb-6">
+                    Web <span class="text-cyan-300">Developer</span>
+                </h1>
+                <p class="fade-in stagger-2 text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                    I create modern, responsive web applications that deliver exceptional user experiences. Passionate about clean code and innovative solutions.
+                </p>
+                <div class="fade-in stagger-3 space-x-4">
+                    <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                        View My Work
+                    </button>
+                    <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                        Get In Touch
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        I'm a passionate web developer with a love for creating interactive and user-friendly applications. 
+                        My journey in web development has led me to master various technologies and frameworks.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        I believe in writing clean, maintainable code and staying up-to-date with the latest web technologies. 
+                        Every project is an opportunity to learn something new and push the boundaries of what's possible on the web.
+                    </p>
+                    <div class="flex space-x-4">
+                        <button class="btn-primary text-white px-6 py-3 rounded-lg font-semibold">
+                            <a href="./Resume.pdf" download="">  Download Resume</a>
+                        </button>
+                        <button class="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors">
+                            View GitHub
+                        </button>
+                    </div>
+                </div>
+                <div class="code-bg p-8 rounded-xl text-green-400 font-mono text-sm">
+                    <div class="mb-4">
+                        <span class="text-blue-400">const</span> <span class="text-yellow-400">developer</span> = {
+                    </div>
+                    <div class="ml-4 space-y-2">
+                        <div><span class="text-cyan-400">name:</span> <span class="text-orange-400">"Your Name"</span>,</div>
+                        <div><span class="text-cyan-400">role:</span> <span class="text-orange-400">"Web Developer"</span>,</div>
+                        <div><span class="text-cyan-400">languages:</span> [<span class="text-orange-400">"JavaScript"</span>, <span class="text-orange-400">"HTML"</span>, <span class="text-orange-400">"CSS"</span>],</div>
+                        <div><span class="text-cyan-400">frameworks:</span> [<span class="text-orange-400">"React"</span>, <span class="text-orange-400">"Node.js"</span>],</div>
+                        <div><span class="text-cyan-400">passion:</span> <span class="text-orange-400">"Building amazing web experiences"</span></div>
+                    </div>
+                    <div>};</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project Section -->
+    <section id="projects" class="py-20 px-4 bg-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Featured Project</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Here's my latest project that showcases my web development skills and attention to detail.
+                </p>
+            </div>
+            
+            <!-- Movie Search App -->
+            <div class="card-hover bg-white rounded-xl overflow-hidden shadow-lg max-w-4xl mx-auto">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <div class="h-64 md:h-full bg-gradient-to-br from-purple-600 via-blue-600 to-cyan-600 flex items-center justify-center">
+                            <div class="text-center text-white p-8">
+                                <svg class="w-20 h-20 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/>
+                                </svg>
+                                <h3 class="text-2xl font-bold">Movie Search App</h3>
+                                <p class="text-blue-100 mt-2">Interactive Movie Database</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Movie Search Application</h3>
+                        <p class="text-gray-600 mb-6">
+                            A dynamic web application that allows users to search for movies, view detailed information, 
+                            and discover new films. Built with modern web technologies for a smooth user experience.
+                        </p>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-900 mb-3">Key Features:</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Real-time movie search functionality
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Detailed movie information display
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Responsive design for all devices
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    API integration for live data
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-900 mb-3">Technologies Used:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">JavaScript</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">HTML5</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">CSS3</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">API Integration</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-4">
+                            <button class="btn-primary text-white px-6 py-2 rounded-lg font-medium">
+                                 <a href="https://github.com/MOHAMMED-KHAJA-045/MOVIES-WEB-APPLICATION/tree/main/MOVIES%20WEB%20APPLICATION" class="project-link">View Code</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Other Projects -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Other Projects</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card-hover bg-white rounded-xl overflow-hidden shadow-lg">
+                        <div class="h-48 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-xl font-semibold text-gray-900 mb-2">
+                                <a href="https://github.com/MOHAMMED-KHAJA-045/MOVIES-WEB-APPLICATION/tree/main/MOVIES%20WEB%20APPLICATION" class="project-link"> Ai Virtual Keyboard</a></h4>
+                            <p class="text-gray-600 mb-4">An AI virtual keyboard in Python detects fingertip positions using image processing and maps them to on-screen keys. It enables touchless typing by interpreting hand gestures captured via a webcam.</p>
+                            <div class="flex space-x-2">
+                                <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">Pyhton</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-white rounded-xl overflow-hidden shadow-lg">
+                        <div class="h-48 bg-gradient-to-br from-pink-400 to-red-500 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-xl font-semibold text-gray-900 mb-2"> <a href="https://github.com/MOHAMMED-KHAJA-045/MUSIC-PLAYER-" class="project-link">Music Player</a></h4>
+                            <p class="text-gray-600 mb-4">A music player built with React offers a sleek, interactive UI for browsing, playing, and managing audio tracks. It uses component-based architecture to handle playback controls, track lists, and dynamic updates in real time.</p>
+                            <div class="flex space-x-2">
+                                <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">React</span>
+                                <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-xs">LocalStorage</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Technical Skills</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Here are the technologies and tools I use to bring ideas to life.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-yellow-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Frontend Development</h3>
+                    <p class="text-gray-600 mb-4">HTML5, CSS3, JavaScript, React, Responsive Design</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c6.623 0 12 5.377 12 12 0 5.623-3.872 10.328-9.092 11.63C9.817 23.801 8 22.298 8 20.5c0-.441.059-.86.177-1.25-.316-.187-.624-.394-.918-.625C5.316 17.378 4 15.5 4 13.342 4 9.579 7.58 6 11.342 6c1.804 0 3.434.7 4.658 1.842 1.224-1.142 2.854-1.842 4.658-1.842C24.42 6 28 9.579 28 13.342c0 2.158-1.316 4.036-3.259 5.283-.294.231-.602.438-.918.625.118.39.177.809.177 1.25 0 1.798-1.817 3.301-6.908 3.13C11.872 22.328 8 17.623 8 12c0-6.623 5.377-12 12-12z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Backend & APIs</h3>
+                    <p class="text-gray-600 mb-4">Node.js, Express, REST APIs, Database Integration</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.219-5.175 1.219-5.175s-.312-.623-.312-1.544c0-1.446.839-2.525 1.883-2.525.888 0 1.317.664 1.317 1.46 0 .889-.567 2.219-.859 3.449-.244 1.031.517 1.871 1.533 1.871 1.84 0 3.254-1.942 3.254-4.743 0-2.481-1.782-4.215-4.327-4.215-2.945 0-4.678 2.211-4.678 4.492 0 .89.343 1.843.771 2.363.085.101.097.19.072.294-.079.33-.254 1.037-.289 1.183-.046.19-.148.231-.342.139-1.287-.599-2.092-2.481-2.092-3.994 0-3.264 2.371-6.26 6.835-6.26 3.583 0 6.369 2.555 6.369 5.973 0 3.564-2.247 6.434-5.365 6.434-1.048 0-2.037-.546-2.374-1.297 0 0-.52 1.979-.646 2.466-.234.897-.866 2.021-1.289 2.705.971.301 2.003.462 3.07.462 6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001.017.001z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Tools & Workflow</h3>
+                    <p class="text-gray-600 mb-4">Git, GitHub, VS Code, Chrome DevTools, Figma</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Let's Work Together</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Have a project in mind? I'd love to hear about it and discuss how we can bring your ideas to life.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Get In Touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-900">Email</p>
+                                <p class="text-gray-600">mohammedkhaja045045@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.219-5.175 1.219-5.175s-.312-.623-.312-1.544c0-1.446.839-2.525 1.883-2.525.888 0 1.317.664 1.317 1.46 0 .889-.567 2.219-.859 3.449-.244 1.031.517 1.871 1.533 1.871 1.84 0 3.254-1.942 3.254-4.743 0-2.481-1.782-4.215-4.327-4.215-2.945 0-4.678 2.211-4.678 4.492 0 .89.343 1.843.771 2.363.085.101.097.19.072.294-.079.33-.254 1.037-.289 1.183-.046.19-.148.231-.342.139-1.287-.599-2.092-2.481-2.092-3.994 0-3.264 2.371-6.26 6.835-6.26 3.583 0 6.369 2.555 6.369 5.973 0 3.564-2.247 6.434-5.365 6.434-1.048 0-2.037-.546-2.374-1.297 0 0-.52 1.979-.646 2.466-.234.897-.866 2.021-1.289 2.705.971.301 2.003.462 3.07.462 6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001.017.001z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-900">GitHub</p>
+                                <p class="text-gray-600">github.com/MOHAMMED_KHAJA_07</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-900">LinkedIn</p>
+                                <p class="text-gray-600">linkedin.com/MOHAMMED KHAJA </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <form class="space-y-6" onsubmit="handleSubmit(event)">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                            <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Project Details</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full btn-primary text-white py-3 rounded-lg font-semibold">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="text-2xl font-bold mb-4">
+                <span class="text-blue-400">MOHAMMED KHAJA </span>
+            </div>
+            <p class="text-gray-400 mb-6">
+                Web Developer passionate about creating amazing digital experiences.
+            </p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.219-5.175 1.219-5.175s-.312-.623-.312-1.544c0-1.446.839-2.525 1.883-2.525.888 0 1.317.664 1.317 1.46 0 .889-.567 2.219-.859 3.449-.244 1.031.517 1.871 1.533 1.871 1.84 0 3.254-1.942 3.254-4.743 0-2.481-1.782-4.215-4.327-4.215-2.945 0-4.678 2.211-4.678 4.492 0 .89.343 1.843.771 2.363.085.101.097.19.072.294-.079.33-.254 1.037-.289 1.183-.046.19-.148.231-.342.139-1.287-.599-2.092-2.481-2.092-3.994 0-3.264 2.371-6.26 6.835-6.26 3.583 0 6.369 2.555 6.369 5.973 0 3.564-2.247 6.434-5.365 6.434-1.048 0-2.037-.546-2.374-1.297 0 0-.52 1.979-.646 2.466-.234.897-.866 2.021-1.289 2.705.971.301 2.003.462 3.07.462 6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001.017.001z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-gray-400">&copy; 2025 MOHAMMED KHAJA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97752cbfe5bd8603',t:'MTc1NjU2NjIwNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
