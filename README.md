@@ -1,6 +1,6 @@
 COMPANY : CODSOFT 
 
-NAME : MOHAMMED KHAJA
+NAME : Devireddy keerthi priya 
 
 INTERN ID : BY25RY218585
 
